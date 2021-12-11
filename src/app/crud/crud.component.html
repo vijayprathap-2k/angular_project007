@@ -1,0 +1,15 @@
+<table border=1>
+    <tr>
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    <tr *ngFor="let m of namelist;let i=index">
+        <th>{{i}}</th>
+        <th>{{m.name}}</th>
+        <th>{{m.age}}</th>
+        <input type="button" value="View" (click)='view(i)'>
+        <input type="button" value="update" (click)='update(i)'>
+        <input type="button" value="delete" (click)='delete(i)'>  
+    </tr>
+</table>
